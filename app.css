@@ -1,0 +1,351 @@
+body, #container, .Twilio-ContactCenter-Container {
+  font-family: 'Open Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+}
+
+.Twilio-ContactCenterFrame {
+    width: 100%;
+    height: 100%;
+}
+
+.Twilio-IconButton.SuggestionsButton {
+    position: absolute;
+    right: 8px;
+    top: 20px;
+
+    background-color: #1976d2;
+    color: #ffffff;
+}
+
+.Twilio-IconButton.CloseButton {
+    background-color: #1976d2;
+    color: #ffffff;
+}
+
+.Twilio-IconButton.SuggestionsButton button {
+    display: flex;
+    padding-left: 7px;
+}
+
+.SuggestionsList {
+    position: absolute;
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: left;
+    color: #222222;
+    width: 264px;
+    padding: 0;
+
+    overflow: scroll;
+
+
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    opacity: 0.95;
+    -webkit-backdrop-filter: blur(1.9px);
+    background-color: #efefef;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.SuggestionsList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.SuggestionsList li {
+    height: 121px;
+    display: flex;
+    padding-right: 8px;
+}
+
+.SuggestionsList .Twilio-IconButton {
+    margin: 8px;
+}
+
+.SuggestionsList li div {
+    margin: auto;
+}
+
+.SuggestionsList li p {
+    margin: auto;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.SuggestionsList li:hover {
+    height: 121px;
+    background-color: #ffffff;
+}
+
+.SuggestionsList h3 {
+    margin: 0;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.porting {
+    background-color: #d81b60;
+    color: #ffffff;
+}
+
+.insurance {
+    background-color: #d81b60;
+    color: #ffffff;
+}
+
+.Twilio-ContactCenter-LeftPane, .Twilio-ContactCenter-NoTasks {
+    background: linear-gradient(#ffffff, #e3e3e3);
+}
+
+.Twilio-ContactCenter-NoTasks {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: #A3A3A3;
+}
+
+.Twilio-ContactCenter-NoTasks h1 {
+    margin: 20px 0 10px 0;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.Twilio-ContactCenter-NoTasks h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/** Start Chart CSS */
+
+.ChartingArea {
+    margin-top: auto;
+    width: 100%;
+    background: linear-gradient(to bottom, #000000, #555555);
+    color: #ffffff;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    bottom: 0;
+}
+
+.ChartingAreaCloseButton {
+    cursor: pointer;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+}
+
+.ChartingAreaHeader {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 11px;
+}
+
+.ChartingArea h3 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+.ChartingArea h4 {
+    margin: 0;
+    font-size: 10px;
+    color: #d4d4d4;
+    font-weight: normal;
+}
+
+.Chart {
+    display: flex;
+    flex-flow: row;
+    flex: 1;
+}
+
+.DonutChart {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ChartLegends {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.ChartLegend {
+    font-size: 12px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.ChartLegendCircle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.ChartLegendName {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 10px;
+    color: #d4d4d4;
+}
+
+.ChartLegendValue {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.ChartPersonalPerformance {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin: 20px;
+}
+
+.ChartPersonalPerformanceValue {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.ChartPersonalPerformanceName {
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.ChartPersonalPerformanceValue.Good {
+    color: #d81b60;
+}
+
+.ChartPersonalPerformanceValue.Average {
+    color: #3f51b5;
+}
+
+.ChartPersonalPerformanceValue.Outstanding {
+    color: #ffc10a;
+}
+
+.DonutChart path {
+    stroke: none;
+}
+
+.ChartAgentCount {
+    position: absolute;
+    top: 118px;
+    left: 65px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ChartAgentCount .Agents {
+    font-size: 10px;
+    color: #d4d4d4;
+}
+
+.ChartAgentCount .Count {
+    font-size: 24px;
+}
+
+/** End Chart CSS */
+
+/** Start Porting Task CSS */
+
+.PortingTaskInfo {
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin: 25px 4px 0px 0px;
+}
+
+.PortingTaskInfo h3 {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.PortingTaskInfo ol {
+    counter-reset: item;
+}
+
+.PortingTaskInfo ol li {
+    display: block;
+    color: #222222;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 25px 4px 0px -30px;
+}
+
+.PortingTaskInfo ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    font-weight: bold;
+}
+
+.PortingTaskInfo a {
+    font-size: 10px;
+    margin-left: -15px;
+    color:  #1976d2
+}
+
+.PortingTaskInfo li {
+    color: #222222;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 25px 4px 0px 8px;
+}
+
+.CheckBackground {
+    width: 16px;
+    height: 16px;
+    border-radius: 14px;
+    background-color: #d81b60;
+    display: inline-block;
+    right: 25px;
+    position: absolute;
+  }
+
+.TheCheck {
+    margin-left: 3px;
+    margin-bottom: 1px;
+}
+
+.UncheckedCircle {
+    width: 16px;
+    height: 16px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    border: solid 1px #999999;
+    display: inline-block;
+    right: 25px;
+    position: absolute;
+}
+
+/** End Porting Task CSS */
+
+.CustomInput {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc(100% - 32px);
+    padding: 6px;
+    box-sizing: border-box;
+}
